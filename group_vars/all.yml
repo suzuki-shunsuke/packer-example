@@ -1,0 +1,2 @@
+---
+nonroot: "{{(ansible_env.HOME == '/root') | ternary('no', 'yes')}}"

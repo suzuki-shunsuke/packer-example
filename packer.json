@@ -1,18 +1,3 @@
-# packer-example
-
-## Example 1 Ansible + GCP
-
-Google Developer Console から Service アカウントのキーをダウンロードし、
-secret/gcp-account.jsonに配置
-
-```
-$ packer validate packer.json
-$ packer build packer.json
-```
-
-source_imageには英数字と-しか使えないので注意
-
-```json
 {
   "builders": [{
     "type": "googlecompute",
@@ -30,4 +15,3 @@ source_imageには英数字と-しか使えないので注意
     }
   ]
 }
-```

@@ -1,0 +1,9 @@
+---
+- hosts: default
+  vars_files:
+  - group_vars/all.yml
+  pre_tasks:
+  roles:
+  - role: suzuki-shunsuke.git-ubuntu
+    git_use_ppa: yes
+    git_upgrade: yes
